@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="26 10 148 148">
+  <defs>
+    <linearGradient id="pelo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7FA6FF"/><stop offset=".6" stop-color="#9D7BFF"/><stop offset="1" stop-color="#C77DFF"/></linearGradient>
+    <linearGradient id="fone" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF6FB5"/><stop offset="1" stop-color="#9D6BFF"/></linearGradient>
+    <radialGradient id="iris" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#8CFFE8"/><stop offset="1" stop-color="#2BB8B0"/></radialGradient>
+  </defs>
+  <!-- orelhas -->
+  <path d="M52 66c-6-20-4-40 2-50 14 6 26 18 32 28z" fill="url(#pelo)"/>
+  <path d="M148 66c6-20 4-40-2-50-14 6-26 18-32 28z" fill="url(#pelo)"/>
+  <path d="M58 54c-2-10-1-20 2-26 7 4 13 10 17 16z" fill="#FFB3D6"/>
+  <path d="M142 54c2-10 1-20-2-26-7 4-13 10-17 16z" fill="#FFB3D6"/>
+  <!-- cabeça -->
+  <ellipse cx="100" cy="92" rx="56" ry="48" fill="url(#pelo)"/>
+  <!-- arco do fone -->
+  <path d="M46 88C44 46 70 26 100 26s56 20 54 62" fill="none" stroke="url(#fone)" stroke-width="9" stroke-linecap="round"/>
+  <rect x="34" y="76" width="20" height="34" rx="9" fill="#FF6FB5"/>
+  <rect x="146" y="76" width="20" height="34" rx="9" fill="#9D6BFF"/>
+  <rect x="38" y="82" width="8" height="22" rx="4" fill="#FFD1E8" opacity=".7"/>
+  <rect x="154" y="82" width="8" height="22" rx="4" fill="#D4C2FF" opacity=".7"/>
+  <!-- olhos -->
+  <circle cx="79" cy="92" r="12" fill="url(#iris)"/>
+  <circle cx="121" cy="92" r="12" fill="url(#iris)"/>
+  <circle cx="79" cy="93" r="6.5" fill="#141A3D"/>
+  <circle cx="121" cy="93" r="6.5" fill="#141A3D"/>
+  <circle cx="82.5" cy="88" r="3.6" fill="#fff"/>
+  <circle cx="124.5" cy="88" r="3.6" fill="#fff"/>
+  <circle cx="76" cy="97" r="1.6" fill="#fff"/>
+  <circle cx="118" cy="97" r="1.6" fill="#fff"/>
+  <!-- óculos -->
+  <circle cx="79" cy="92" r="17" fill="#C8F4FF" fill-opacity=".12" stroke="#FFC970" stroke-width="4"/>
+  <circle cx="121" cy="92" r="17" fill="#C8F4FF" fill-opacity=".12" stroke="#FFC970" stroke-width="4"/>
+  <path d="M96 90q4-4 8 0" fill="none" stroke="#FFC970" stroke-width="4" stroke-linecap="round"/>
+  <!-- bochechas, nariz e boca -->
+  <ellipse cx="62" cy="114" rx="7" ry="4" fill="#FF8FC4" opacity=".75"/>
+  <ellipse cx="138" cy="114" rx="7" ry="4" fill="#FF8FC4" opacity=".75"/>
+  <path d="M96 111h8l-4 4z" fill="#FF6FB5"/>
+  <path d="M92 118c2 3 5.5 3 8 0 2.5 3 6 3 8 0" fill="none" stroke="#141A3D" stroke-width="2.4" stroke-linecap="round"/>
+  </svg>

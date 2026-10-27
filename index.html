@@ -5,31 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Deyse Medeiros · Desenvolvedora Back-end</title>
   <meta name="description" content="Portfólio de Deyse Medeiros, desenvolvedora back-end em formação: APIs REST com NestJS e Spring Boot, bancos de dados e engenharia de software.">
-  <meta name="theme-color" content="#171B33">
+  <meta name="theme-color" content="#141A3D">
   <meta property="og:title" content="Deyse Medeiros · Desenvolvedora Back-end">
   <meta property="og:description" content="APIs REST, bancos de dados e engenharia de software. Aberta a estágio e vagas júnior.">
-  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-  <div class="ceu" aria-hidden="true"></div>
+  <svg class="ceu" aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+    <g class="linhas">
+      <polyline points="120,140 210,95 300,150 370,110 430,190"/>
+      <polyline points="1080,90 1160,160 1250,130 1330,210 1270,290"/>
+      <polyline points="1160,160 1120,250"/>
+      <polyline points="90,620 170,700 260,660 330,760"/>
+      <polyline points="1180,640 1260,700 1340,660 1390,760 1290,800"/>
+      <polyline points="640,60 720,120 800,90"/>
+    </g>
+    <g class="estrelas-ouro">
+      <circle cx="120" cy="140" r="2.6"/><circle cx="210" cy="95" r="2"/><circle cx="300" cy="150" r="3"/><circle cx="370" cy="110" r="2"/><circle cx="430" cy="190" r="2.4"/>
+      <circle cx="1080" cy="90" r="2.4"/><circle cx="1160" cy="160" r="3"/><circle cx="1250" cy="130" r="2"/><circle cx="1330" cy="210" r="2.6"/><circle cx="1270" cy="290" r="2"/><circle cx="1120" cy="250" r="2"/>
+      <circle cx="90" cy="620" r="2.2"/><circle cx="170" cy="700" r="2.8"/><circle cx="260" cy="660" r="2"/><circle cx="330" cy="760" r="2.4"/>
+      <circle cx="1180" cy="640" r="2.4"/><circle cx="1260" cy="700" r="2"/><circle cx="1340" cy="660" r="2.8"/><circle cx="1390" cy="760" r="2"/><circle cx="1290" cy="800" r="2.4"/>
+      <circle cx="640" cy="60" r="2"/><circle cx="720" cy="120" r="2.6"/><circle cx="800" cy="90" r="2"/>
+    </g>
+    <g class="estrelas">
+      <circle cx="520" cy="300" r="1.2"/><circle cx="880" cy="240" r="1"/><circle cx="960" cy="420" r="1.3"/><circle cx="560" cy="520" r="1"/><circle cx="760" cy="640" r="1.2"/><circle cx="980" cy="760" r="1"/><circle cx="440" cy="840" r="1.2"/><circle cx="40" cy="380" r="1"/><circle cx="1410" cy="420" r="1.2"/><circle cx="700" cy="380" r="1"/><circle cx="240" cy="420" r="1.1"/><circle cx="1040" cy="560" r="1"/>
+    </g>
+  </svg>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="topo">
     <a class="marca" href="#inicio" aria-label="Início">
-      <svg class="chapeu" viewBox="0 0 64 64" aria-hidden="true">
-        <defs>
-          <linearGradient id="gHat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FB3EA"/><stop offset=".55" stop-color="#B9A7E8"/><stop offset="1" stop-color="#E89BBE"/></linearGradient>
-        </defs>
-        <ellipse cx="32" cy="51" rx="28" ry="7" fill="url(#gHat)"/>
-        <path d="M16 49C20 37 24 23 30 13c3-5 10-7 16-3-5 0-8 4-9 9 3 10 7 22 11 30z" fill="url(#gHat)"/>
-        <path d="M17.6 44.6Q32 49.5 46.4 44.6L48 49Q32 54.5 16 49z" fill="#2A2350"/>
-        <path d="M53 8l1.6 4.4L59 14l-4.4 1.6L53 20l-1.6-4.4L47 14l4.4-1.6z" fill="#F2D492"/>
-        <circle cx="10" cy="20" r="1.6" fill="#F2D492"/>
-      </svg>
+      <img class="logo-gato" src="img/gato-logo.svg" alt="" width="36" height="36">
       <span>Deyse Medeiros</span>
     </a>
     <nav aria-label="Seções">
@@ -60,7 +70,9 @@
         </div>
       </div>
 
-      <div class="terminal" aria-label="Exemplo de requisição à API com os dados da Deyse">
+      <div class="terminal-area">
+        <img class="gato-dev" src="img/gato-dev.svg" alt="Mascote: gatinho de óculos e fone de ouvido espiando por cima da janela de código" width="200" height="170">
+        <div class="terminal" aria-label="Exemplo de requisição à API com os dados da Deyse">
         <div class="terminal-barra">
           <span class="metodo">GET</span>
           <span class="rota">/api/desenvolvedoras/deyse</span>
@@ -79,6 +91,7 @@
   <span class="k">"magia_favorita"</span>: <span class="s">"transformar requisitos em APIs"</span>,
   <span class="k">"disponivel"</span>: <span class="b">true</span>
 }</code></pre>
+      </div>
       </div>
     </section>
 
@@ -299,9 +312,9 @@
   </main>
 
   <footer class="rodape">
-    <p>Feito com café e um pouco de magia por Deyse Medeiros, <span id="ano">2026</span></p>
+    <p>Feito com café, um gatinho e um pouco de magia por Deyse Medeiros, <span id="ano">2026</span></p>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

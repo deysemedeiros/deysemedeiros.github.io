@@ -4,19 +4,20 @@
    ========================================================= */
 
 :root {
-  --noite: #171B33;
-  --noite-2: #1E2342;
-  --painel: #242A50;
-  --linha: #343B66;
-  --texto: #E8EAF6;
-  --texto-suave: #A9AED0;
-  --azul: #8FB3EA;
-  --azul-forte: #6C8FE0;
-  --lavanda: #B9A7E8;
-  --rosa: #E89BBE;
-  --verde-ok: #9FD8B8;
-  --ouro: #F2D492;
-  --titulo: "Cinzel", Georgia, serif;
+  --noite: #141A3D;
+  --noite-2: #1A2150;
+  --painel: #222A62;
+  --linha: #323C82;
+  --texto: #EEF0FF;
+  --texto-suave: #B2B8E6;
+  --azul: #7FA6FF;
+  --azul-forte: #5B8CFF;
+  --lavanda: #B49BFF;
+  --rosa: #FF7DBE;
+  --verde-ok: #6FE3C8;
+  --teal: #3FD0C9;
+  --ouro: #FFC970;
+  --titulo: "Poppins", system-ui, sans-serif;
 
   --fonte: "Poppins", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, monospace;
@@ -32,8 +33,9 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background:
-    radial-gradient(900px 500px at 85% -10%, rgba(185, 167, 232, .16), transparent 70%),
-    radial-gradient(700px 400px at -10% 30%, rgba(143, 179, 234, .10), transparent 70%),
+    radial-gradient(900px 520px at 85% -10%, rgba(157, 107, 255, .28), transparent 70%),
+    radial-gradient(700px 420px at -10% 35%, rgba(91, 140, 255, .18), transparent 70%),
+    radial-gradient(600px 400px at 60% 110%, rgba(255, 125, 190, .12), transparent 70%),
     var(--noite);
   color: var(--texto);
   font-family: var(--fonte);
@@ -75,7 +77,7 @@ a:hover { color: var(--rosa); }
   max-width: var(--largura);
   margin: 0 auto;
   padding: 18px 24px;
-  background: rgba(23, 27, 51, .82);
+  background: rgba(20, 26, 61, .82);
   backdrop-filter: blur(10px);
 }
 
@@ -87,7 +89,7 @@ a:hover { color: var(--rosa); }
   text-decoration: none;
   font-weight: 600;
 }
-.chapeu { width: 34px; height: 34px; }
+.logo-gato { width: 36px; height: 36px; display: block; }
 
 .topo nav { display: flex; gap: 24px; }
 .topo nav a {
@@ -105,27 +107,21 @@ main { max-width: var(--largura); margin: 0 auto; padding: 0 24px; }
 h1, h2, h3, h4 { line-height: 1.2; margin: 0; }
 h1, h2, .projeto h3 { font-family: var(--titulo); }
 
-/* Céu estrelado fixo atrás de tudo */
+/* Céu com constelações, como um mapa estelar */
 .ceu {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   pointer-events: none;
-  background-image:
-    radial-gradient(1.2px 1.2px at 12% 18%, rgba(242,212,146,.75), transparent 60%),
-    radial-gradient(1px 1px at 28% 72%, rgba(232,234,246,.55), transparent 60%),
-    radial-gradient(1.4px 1.4px at 47% 9%, rgba(242,212,146,.6), transparent 60%),
-    radial-gradient(1px 1px at 63% 41%, rgba(232,234,246,.45), transparent 60%),
-    radial-gradient(1.3px 1.3px at 79% 83%, rgba(242,212,146,.55), transparent 60%),
-    radial-gradient(1px 1px at 91% 27%, rgba(232,234,246,.6), transparent 60%),
-    radial-gradient(1px 1px at 6% 56%, rgba(232,234,246,.4), transparent 60%),
-    radial-gradient(1.2px 1.2px at 37% 93%, rgba(242,212,146,.45), transparent 60%),
-    radial-gradient(1px 1px at 72% 62%, rgba(232,234,246,.35), transparent 60%),
-    radial-gradient(1px 1px at 55% 25%, rgba(232,234,246,.4), transparent 60%);
-  background-size: 520px 520px;
-  animation: cintilar 6s ease-in-out infinite alternate;
 }
-@keyframes cintilar { from { opacity: .55; } to { opacity: 1; } }
+.ceu .linhas polyline { fill: none; stroke: #8FA8FF; stroke-opacity: .16; stroke-width: 1; }
+.ceu .estrelas-ouro circle { fill: var(--ouro); opacity: .75; animation: cintilar 4s ease-in-out infinite alternate; }
+.ceu .estrelas-ouro circle:nth-child(3n) { animation-delay: -1.3s; }
+.ceu .estrelas-ouro circle:nth-child(3n+1) { animation-delay: -2.6s; }
+.ceu .estrelas circle { fill: #EEF0FF; opacity: .45; }
+@keyframes cintilar { from { opacity: .35; } to { opacity: .95; } } }
 
 h2 {
   font-size: clamp(1.7rem, 3.2vw, 2.25rem);
@@ -142,7 +138,7 @@ h2 {
   grid-template-columns: 1fr 1.15fr;
   gap: 48px;
   align-items: center;
-  padding: 96px 0 56px;
+  padding: 64px 0 56px;
 }
 
 .status {
@@ -164,10 +160,10 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 6vw, 4.3rem);
+  font-size: clamp(2.8rem, 6.5vw, 4.6rem);
   font-weight: 700;
-  letter-spacing: .01em;
-  background: linear-gradient(100deg, var(--azul) 0%, var(--lavanda) 50%, var(--rosa) 100%);
+  letter-spacing: -.02em;
+  background: linear-gradient(100deg, var(--azul) 0%, var(--lavanda) 45%, var(--rosa) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -208,12 +204,23 @@ h1 {
 .botao.primario:hover { background: var(--rosa); border-color: var(--rosa); color: var(--noite); }
 
 /* ---------- Terminal (o elemento de destaque) ---------- */
+.terminal-area { position: relative; padding-top: 180px; }
+.gato-dev {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 230px;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(0 10px 24px rgba(157, 107, 255, .35));
+}
+.terminal-area .terminal { position: relative; z-index: 1; }
 .terminal {
   background: var(--noite-2);
   border: 1px solid var(--linha);
   border-radius: var(--raio);
   overflow: hidden;
-  box-shadow: 0 30px 80px -30px rgba(108, 143, 224, .45);
+  box-shadow: 0 0 0 1px rgba(127,166,255,.08), 0 30px 80px -30px rgba(157, 107, 255, .6);
 }
 
 .terminal-barra {
@@ -247,6 +254,7 @@ h1 {
 }
 .terminal-corpo .k { color: var(--lavanda); }
 .terminal-corpo .s { color: var(--rosa); }
+.terminal-corpo .b { color: var(--teal); }
 .terminal-corpo .b { color: var(--azul); }
 
 .cursor {
@@ -437,6 +445,8 @@ h1 {
   .terminal-corpo { font-size: .76rem; padding: 16px; min-height: 0; white-space: pre-wrap; }
   .terminal-barra { font-size: .76rem; padding: 12px 14px; }
   .http { display: none; }
+  .gato-dev { width: 160px; right: 16px; }
+  .terminal-area { padding-top: 124px; }
   .galeria-app { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
   .galeria-app img { border-radius: 12px; }
 }
