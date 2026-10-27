@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-        <path d="M31 30C25 16 10 8 6 14c-4 7 4 18 18 18-12 3-16 14-10 18 7 4 15-6 17-16z" fill="url(#gA)"/>
-        <path d="M33 30c6-14 21-22 25-16 4 7-4 18-18 18 12 3 16 14 10 18-7 4-15-6-17-16z" fill="url(#gB)"/>
-        <rect x="31" y="22" width="2" height="22" rx="1" fill="#E8EAF6"/>
         <defs>
-          <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FB3EA"/><stop offset="1" stop-color="#B9A7E8"/></linearGradient>
-          <linearGradient id="gB" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E89BBE"/><stop offset="1" stop-color="#B9A7E8"/></linearGradient>
+          <linearGradient id="gHat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FB3EA"/><stop offset=".55" stop-color="#B9A7E8"/><stop offset="1" stop-color="#E89BBE"/></linearGradient>
         </defs>
+        <ellipse cx="32" cy="51" rx="28" ry="7" fill="url(#gHat)"/>
+        <path d="M16 49C20 37 24 23 30 13c3-5 10-7 16-3-5 0-8 4-9 9 3 10 7 22 11 30z" fill="url(#gHat)"/>
+        <path d="M17.6 44.6Q32 49.5 46.4 44.6L48 49Q32 54.5 16 49z" fill="#2A2350"/>
+        <path d="M53 8l1.6 4.4L59 14l-4.4 1.6L53 20l-1.6-4.4L47 14l4.4-1.6z" fill="#F2D492"/>
+        <circle cx="10" cy="20" r="1.6" fill="#F2D492"/>
       </svg>

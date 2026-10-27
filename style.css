@@ -15,6 +15,8 @@
   --lavanda: #B9A7E8;
   --rosa: #E89BBE;
   --verde-ok: #9FD8B8;
+  --ouro: #F2D492;
+  --titulo: "Cinzel", Georgia, serif;
 
   --fonte: "Poppins", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, monospace;
@@ -85,7 +87,7 @@ a:hover { color: var(--rosa); }
   text-decoration: none;
   font-weight: 600;
 }
-.borboleta { width: 30px; height: 30px; }
+.chapeu { width: 34px; height: 34px; }
 
 .topo nav { display: flex; gap: 24px; }
 .topo nav a {
@@ -101,10 +103,34 @@ main { max-width: var(--largura); margin: 0 auto; padding: 0 24px; }
 .secao { padding: 88px 0 24px; }
 
 h1, h2, h3, h4 { line-height: 1.2; margin: 0; }
+h1, h2, .projeto h3 { font-family: var(--titulo); }
+
+/* Céu estrelado fixo atrás de tudo */
+.ceu {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.2px 1.2px at 12% 18%, rgba(242,212,146,.75), transparent 60%),
+    radial-gradient(1px 1px at 28% 72%, rgba(232,234,246,.55), transparent 60%),
+    radial-gradient(1.4px 1.4px at 47% 9%, rgba(242,212,146,.6), transparent 60%),
+    radial-gradient(1px 1px at 63% 41%, rgba(232,234,246,.45), transparent 60%),
+    radial-gradient(1.3px 1.3px at 79% 83%, rgba(242,212,146,.55), transparent 60%),
+    radial-gradient(1px 1px at 91% 27%, rgba(232,234,246,.6), transparent 60%),
+    radial-gradient(1px 1px at 6% 56%, rgba(232,234,246,.4), transparent 60%),
+    radial-gradient(1.2px 1.2px at 37% 93%, rgba(242,212,146,.45), transparent 60%),
+    radial-gradient(1px 1px at 72% 62%, rgba(232,234,246,.35), transparent 60%),
+    radial-gradient(1px 1px at 55% 25%, rgba(232,234,246,.4), transparent 60%);
+  background-size: 520px 520px;
+  animation: cintilar 6s ease-in-out infinite alternate;
+}
+@keyframes cintilar { from { opacity: .55; } to { opacity: 1; } }
 
 h2 {
-  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-size: clamp(1.7rem, 3.2vw, 2.25rem);
   font-weight: 600;
+  color: var(--ouro);
   margin-bottom: 28px;
 }
 
@@ -138,9 +164,9 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 6.5vw, 4.6rem);
+  font-size: clamp(2.6rem, 6vw, 4.3rem);
   font-weight: 700;
-  letter-spacing: -.02em;
+  letter-spacing: .01em;
   background: linear-gradient(100deg, var(--azul) 0%, var(--lavanda) 50%, var(--rosa) 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -242,7 +268,7 @@ h1 {
 .sobre-texto p { margin: 0 0 18px; max-width: 62ch; }
 .sobre-texto .discreta { color: var(--texto-suave); font-size: .95rem; }
 
-.fatos { margin: 0; border-left: 2px solid var(--lavanda); padding-left: 24px; }
+.fatos { margin: 0; border-left: 2px solid var(--ouro); padding-left: 24px; }
 .fatos div { margin-bottom: 16px; }
 .fatos dt { color: var(--texto-suave); font-size: .85rem; }
 .fatos dd { margin: 2px 0 0; font-weight: 500; }
@@ -289,12 +315,11 @@ h1 {
   color: var(--texto-suave);
 }
 .contrib li::before {
-  content: "";
+  content: "✦";
   position: absolute;
-  left: 0; top: .7em;
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--rosa);
+  left: 0; top: .05em;
+  font-size: .8em;
+  color: var(--ouro);
 }
 
 .tags { list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -418,5 +443,5 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .cursor { animation: none; }
+  .cursor, .ceu { animation: none; }
 }
