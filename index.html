@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deyse Medeiros · Desenvolvedora Back-end</title>
+  <meta name="description" content="Portfólio de Deyse Medeiros, desenvolvedora back-end em formação: APIs REST com NestJS e Spring Boot, bancos de dados e engenharia de software.">
+  <meta name="theme-color" content="#171B33">
+  <meta property="og:title" content="Deyse Medeiros · Desenvolvedora Back-end">
+  <meta property="og:description" content="APIs REST, bancos de dados e engenharia de software. Aberta a estágio e vagas júnior.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Início">
+      <svg class="borboleta" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M31 30C25 16 10 8 6 14c-4 7 4 18 18 18-12 3-16 14-10 18 7 4 15-6 17-16z" fill="url(#gA)"/>
+        <path d="M33 30c6-14 21-22 25-16 4 7-4 18-18 18 12 3 16 14 10 18-7 4-15-6-17-16z" fill="url(#gB)"/>
+        <rect x="31" y="22" width="2" height="22" rx="1" fill="#E8EAF6"/>
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FB3EA"/><stop offset="1" stop-color="#B9A7E8"/></linearGradient>
+          <linearGradient id="gB" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E89BBE"/><stop offset="1" stop-color="#B9A7E8"/></linearGradient>
+        </defs>
+      </svg>
+      <span>Deyse Medeiros</span>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="status"><span class="ponto" aria-hidden="true"></span>Aberta a estágio e vagas júnior</p>
+        <h1>Deyse Medeiros</h1>
+        <p class="cargo">Desenvolvedora back-end, full stack em formação</p>
+        <p class="resumo">
+          Construo APIs REST com NestJS e Spring Boot, modelo bancos de dados
+          e documento sistemas com UML. Estudo Desenvolvimento de Software
+          Multiplataforma na Fatec Zona Leste.
+        </p>
+        <div class="acoes">
+          <a class="botao primario" href="#projetos">Ver projetos</a>
+          <a class="botao" href="https://github.com/deysemedeiros" target="_blank" rel="noopener">GitHub</a>
+          <a class="botao" href="https://www.linkedin.com/in/deyse-medeiros-soares-4907012a5/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Exemplo de requisição à API com os dados da Deyse">
+        <div class="terminal-barra">
+          <span class="metodo">GET</span>
+          <span class="rota">/api/desenvolvedoras/deyse</span>
+          <span class="http">200 OK</span>
+        </div>
+<pre class="terminal-corpo"><code id="json">{
+  <span class="k">"nome"</span>: <span class="s">"Deyse Medeiros"</span>,
+  <span class="k">"foco"</span>: [<span class="s">"back-end"</span>, <span class="s">"banco de dados"</span>, <span class="s">"APIs REST"</span>],
+  <span class="k">"stack"</span>: {
+    <span class="k">"node"</span>: [<span class="s">"NestJS"</span>, <span class="s">"TypeORM"</span>, <span class="s">"PostgreSQL"</span>],
+    <span class="k">"java"</span>: [<span class="s">"Spring Boot"</span>, <span class="s">"Spring Security"</span>, <span class="s">"MongoDB"</span>]
+  },
+  <span class="k">"seguranca"</span>: [<span class="s">"JWT"</span>, <span class="s">"guards por perfil"</span>, <span class="s">"bcrypt"</span>],
+  <span class="k">"documentacao"</span>: [<span class="s">"Swagger"</span>, <span class="s">"UML com PlantUML"</span>],
+  <span class="k">"formacao"</span>: <span class="s">"DSM, Fatec Zona Leste"</span>,
+  <span class="k">"disponivel"</span>: <span class="b">true</span>
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao sobre" id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre-grade">
+        <div class="sobre-texto">
+          <p>
+            Meu primeiro contato com programação foi durante a pandemia, e o
+            interesse só cresceu desde então. Hoje curso Desenvolvimento de
+            Software Multiplataforma na Fatec Zona Leste e sou técnica em
+            Desenvolvimento de Sistemas pela ETEC.
+          </p>
+          <p>
+            Nos projetos em equipe costumo assumir o back-end, o banco de dados
+            e a engenharia de software: desenho a modelagem, escrevo a API,
+            cuido da autenticação e deixo tudo documentado para o time. Também
+            participo da organização do backlog com histórias de usuário e da
+            validação com os stakeholders.
+          </p>
+          <p class="discreta">
+            Antes da tecnologia, me formei em Música e fiz pós em Neurociência
+            aplicada à educação, o que me trouxe paciência para ensinar e
+            olhar para quem vai usar o sistema.
+          </p>
+        </div>
+        <dl class="fatos">
+          <div><dt>Graduação</dt><dd>DSM, Fatec Zona Leste (cursando)</dd></div>
+          <div><dt>Técnico</dt><dd>Desenvolvimento de Sistemas, ETEC</dd></div>
+          <div><dt>Disponibilidade</dt><dd>Tardes, das 13h às 19h</dd></div>
+          <div><dt>Inglês</dt><dd>Intermediário, leio documentação técnica</dd></div>
+          <div><dt>Local</dt><dd>São Paulo, Zona Leste</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="secao" id="projetos">
+      <h2>Projetos</h2>
+      <p class="intro">Projetos em equipe, com destaque para a parte que eu construí.</p>
+
+      <article class="projeto">
+        <div class="projeto-cabeca">
+          <h3>Osíris</h3>
+          <p class="contexto">Projeto Integrador, Fatec Zona Leste, equipe de 5</p>
+        </div>
+        <p class="projeto-desc">
+          Plataforma que conecta pequenos negócios aos alunos de DSM: o
+          empreendedor cadastra uma demanda de software e um grupo de alunos a
+          desenvolve como projeto real.
+        </p>
+        <div class="galeria galeria-web">
+          <figure><img src="img/osiris-inicio.webp" width="960" height="540" loading="lazy" alt="Página inicial do Osíris com a chamada que conecta empreendedores e estudantes e a lista de demandas com filtros"><figcaption>Página inicial e galeria de demandas</figcaption></figure>
+          <figure><img src="img/osiris-cadastro.webp" width="960" height="540" loading="lazy" alt="Formulário de cadastro de empreendedor no Osíris com nome, e-mail, telefone, empresa e CNPJ"><figcaption>Cadastro de empreendedor com CNPJ</figcaption></figure>
+        </div>
+        <h4>O que eu fiz no back-end (NestJS + PostgreSQL)</h4>
+        <ul class="contrib">
+          <li>Autenticação com JWT (Passport), senhas com bcrypt e guards de rota por perfil</li>
+          <li>Módulo administrativo com CRUD completo: só um admin pode promover outro usuário</li>
+          <li>Verificação de e-mail por código via SMTP (Nodemailer) com integração Azure</li>
+          <li>Módulos de Empreendedor (com validação de CNPJ), Coordenador, Grupo, Demanda e Histórico</li>
+          <li>DTOs validados com class-validator, migrations com TypeORM e API documentada no Swagger</li>
+          <li>Diagramas UML em PlantUML para a documentação do projeto</li>
+        </ul>
+        <ul class="tags" aria-label="Tecnologias">
+          <li>NestJS</li><li>TypeScript</li><li>PostgreSQL</li><li>TypeORM</li><li>JWT</li><li>Swagger</li>
+        </ul>
+        <div class="links">
+          <a href="https://osiris-fateczl.netlify.app/" target="_blank" rel="noopener">Ver online</a>
+          <a href="https://github.com/Infinito-1/osiris-backend" target="_blank" rel="noopener">Código do back-end</a>
+          <a href="https://github.com/Infinito-1/osiris-react" target="_blank" rel="noopener">Código do front-end</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="projeto-cabeca">
+          <h3>NeuroFlow</h3>
+          <p class="contexto">TCC do técnico, ETEC, projeto em grupo</p>
+        </div>
+        <p class="projeto-desc">
+          App de apoio a pessoas com TDAH que conecta paciente, família e
+          profissional de saúde: diário emocional, metas de rotina, respiração
+          guiada e busca de profissionais. Roda na web, Android e iOS.
+        </p>
+        <div class="galeria galeria-app">
+          <figure><img src="img/neuroflow-login.webp" width="390" height="844" loading="lazy" alt="Tela de login do NeuroFlow com logo de cérebro em tons pastel"><figcaption>Login</figcaption></figure>
+          <figure><img src="img/neuroflow-cadastro.webp" width="390" height="844" loading="lazy" alt="Tela de cadastro do NeuroFlow com escolha de perfil: paciente, responsável ou clínico"><figcaption>Cadastro por perfil</figcaption></figure>
+          <figure><img src="img/neuroflow-respirar.webp" width="390" height="844" loading="lazy" alt="Exercício de respiração guiada do NeuroFlow com círculo animado e cronômetro"><figcaption>Respiração guiada</figcaption></figure>
+        </div>
+        <h4>O que eu fiz</h4>
+        <ul class="contrib">
+          <li>Banco de dados de ponta a ponta no Supabase: modelagem, diagramas e implementação</li>
+          <li>Regras de acesso direto no banco com Row Level Security: cada perfil só vê o que pode</li>
+          <li>Gatilho em PL/pgSQL que impede o usuário de se autoaprovar ou trocar o próprio perfil</li>
+          <li>Migração do código para TypeScript e publicação da versão web na Vercel</li>
+        </ul>
+        <ul class="tags" aria-label="Tecnologias">
+          <li>React Native</li><li>Expo</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>PL/pgSQL</li>
+        </ul>
+        <div class="links">
+          <a href="https://neuroflow-deyse.vercel.app/" target="_blank" rel="noopener">Ver online</a>
+          <a href="https://github.com/deysemedeiros/NeuroFlow" target="_blank" rel="noopener">Código</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="projeto-cabeca">
+          <h3>Sistema de Monitoria e Frequência Acadêmica</h3>
+          <p class="contexto">Projeto Integrador, Fatec Zona Leste, em desenvolvimento</p>
+        </div>
+        <p class="projeto-desc">
+          Plataforma para inscrição de monitores, análise das candidaturas pelo
+          supervisor, termo de compromisso com assinatura digital e relatórios
+          de entregas. Validada com a vice-direção da faculdade.
+        </p>
+        <h4>O que eu faço no back-end (Spring Boot + MongoDB)</h4>
+        <ul class="contrib">
+          <li>API REST em camadas: Controller, Service e Repository</li>
+          <li>Spring Security com JWT e acesso por perfil: aluno, monitor e supervisor</li>
+          <li>Verificação de e-mail por código e fluxo de aprovação do termo de compromisso</li>
+          <li>Backlog em histórias de usuário e diagramas UML em PlantUML</li>
+        </ul>
+        <ul class="tags" aria-label="Tecnologias">
+          <li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>MongoDB</li><li>React</li>
+        </ul>
+        <div class="links">
+          <a href="https://github.com/Monitoria-FATEC" target="_blank" rel="noopener">Organização no GitHub</a>
+        </div>
+      </article>
+
+      <h3 class="outros-titulo">Outros estudos</h3>
+      <ul class="outros">
+        <li>
+          <a href="https://github.com/deysemedeiros/Projeto-API-Rest-SpringBoot" target="_blank" rel="noopener">API REST com Spring Boot</a>
+          <span>Endpoints, camada de serviço e persistência (Desenvolvimento Web III)</span>
+        </li>
+        <li>
+          <a href="https://github.com/deysemedeiros/aluguel-carros-java" target="_blank" rel="noopener">Aluguel de Carros</a>
+          <span>Orientação a objetos em Java</span>
+        </li>
+        <li>
+          <a href="https://github.com/deysemedeiros/sistema-chamados" target="_blank" rel="noopener">Sistema de Chamados</a>
+          <span>Abertura e acompanhamento de chamados em React</span>
+        </li>
+        <li>
+          <a href="https://github.com/deysemedeiros/AgendaDSIII" target="_blank" rel="noopener">Agenda em PHP</a>
+          <span>CRUD de contatos com banco de dados</span>
+        </li>
+        <li class="maui">
+          <span class="maui-nome">Apps mobile em .NET MAUI (C#)</span>
+          <span class="maui-links">
+            <a href="https://github.com/deysemedeiros/MauiAppMinhasCompras" target="_blank" rel="noopener">Minhas Compras</a>
+            <a href="https://github.com/deysemedeiros/MauiAppHotel" target="_blank" rel="noopener">Meu Hotel</a>
+            <a href="https://github.com/deysemedeiros/MauiAppCadastroEventos" target="_blank" rel="noopener">Cadastro de Eventos</a>
+            <a href="https://github.com/deysemedeiros/MauiAppJogoDaVelha" target="_blank" rel="noopener">Jogo da Velha</a>
+            <a href="https://github.com/deysemedeiros/MauiAppMeuCombustivel" target="_blank" rel="noopener">Meu Combustível</a>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="secao" id="tecnologias">
+      <h2>Tecnologias</h2>
+      <div class="stack">
+        <div class="grupo azul">
+          <h3>Back-end</h3>
+          <p>NestJS, Node.js, Java, Spring Boot, Spring Security, JWT, Swagger, PHP, C#, Python</p>
+        </div>
+        <div class="grupo lavanda">
+          <h3>Banco de dados e modelagem</h3>
+          <p>PostgreSQL, MySQL, MongoDB, Supabase, TypeORM, PlantUML</p>
+        </div>
+        <div class="grupo rosa">
+          <h3>Front-end e mobile</h3>
+          <p>TypeScript, React, React Native, JavaScript, Tailwind CSS, HTML, CSS, .NET MAUI</p>
+        </div>
+        <div class="grupo">
+          <h3>Ferramentas</h3>
+          <p>Git, GitHub, Postman, IntelliJ, Vercel, Netlify</p>
+        </div>
+      </div>
+
+      <h3 class="estudando-titulo">Estudando agora</h3>
+      <ul class="estudando">
+        <li><strong>Bancos NoSQL</strong> modelagem de documentos, índices e agregações no MongoDB</li>
+        <li><strong>APIs</strong> versionamento de endpoints, tratamento de erros e OpenAPI</li>
+        <li><strong>Testes</strong> Jest e JUnit</li>
+        <li><strong>DevOps</strong> Docker e CI/CD com GitHub Actions</li>
+        <li><strong>Gestão ágil</strong> Scrum, Kanban e priorização de backlog</li>
+        <li><strong>Python</strong> automações e manipulação de dados</li>
+      </ul>
+
+      <h3 class="estudando-titulo">Cursos complementares</h3>
+      <ul class="cursos">
+        <li>Python Essentials 1 e 2, Cisco NetAcad</li>
+        <li>Java Completo, Udemy</li>
+        <li>Engaging Stakeholders for Success, Cisco NetAcad</li>
+        <li>Introdução à Gestão de Projetos, Fundação Bradesco</li>
+        <li>Bootcamp Power BI, Santander Academy (cursando)</li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao contato" id="contato">
+      <h2>Vamos conversar?</h2>
+      <p>
+        Procuro minha primeira oportunidade em tecnologia, em estágio ou como
+        desenvolvedora júnior, com foco em back-end. Tenho as tardes livres,
+        das 13h às 19h.
+      </p>
+      <div class="acoes">
+        <a class="botao primario" href="mailto:deysebmsoares@gmail.com">Enviar e-mail</a>
+        <a class="botao" href="https://www.linkedin.com/in/deyse-medeiros-soares-4907012a5/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="botao" href="https://github.com/deysemedeiros" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="email">deysebmsoares@gmail.com <button type="button" class="copiar" data-email="deysebmsoares@gmail.com">Copiar</button></p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito por Deyse Medeiros, <span id="ano">2026</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
