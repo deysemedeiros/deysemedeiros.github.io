@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
   <svg class="ceu" aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
@@ -214,15 +214,24 @@
           </div>
         </article>
         <article class="card" data-cat="back-end">
-          <img class="card-capa" src="img/capa-api-rest.webp?v=2" width="960" height="540" loading="lazy" alt="Capa da API REST com o UsuarioController em Spring Boot">
+          <img class="card-capa" src="img/api-rest-capa.webp" width="960" height="540" loading="lazy" alt="Tela de gerenciamento de usuários com resumo, busca e tabela consumindo a API REST">
           <div class="card-corpo">
             <p class="contexto">Desenvolvimento Web III · Fatec ZL</p>
             <h3>API REST com Spring Boot</h3>
-            <p class="card-desc">API de usuários feita na disciplina, com as operações de cadastro, consulta, atualização e exclusão em PostgreSQL.</p>
-            <ul class="tags" aria-label="Tecnologias"><li>Java</li><li>Spring Boot</li><li>JPA</li><li>PostgreSQL</li></ul>
+            <p class="card-desc">API de usuários com CRUD, validação, importação em lote por arquivo e uma página web que consome os endpoints com fetch. Banco PostgreSQL no Neon.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Java</li><li>Spring Boot</li><li>JPA</li><li>PostgreSQL</li><li>JUnit</li><li>Swagger</li></ul>
+            <figure class="galeria">
+              <ul>
+                <li><a href="img/api-rest-editar.webp" target="_blank" rel="noopener"><img src="img/api-rest-editar-mini.webp" width="320" height="200" loading="lazy" alt="Edição de um usuário com a linha destacada na tabela"></a></li>
+                <li><a href="img/api-rest-excluir.webp" target="_blank" rel="noopener"><img src="img/api-rest-excluir-mini.webp" width="320" height="200" loading="lazy" alt="Janela de confirmação de exclusão"></a></li>
+                <li><a href="img/api-rest-importar.webp" target="_blank" rel="noopener"><img src="img/api-rest-importar-mini.webp" width="320" height="200" loading="lazy" alt="Importação de usuários por arquivo CSV concluída"></a></li>
+                <li><a href="img/api-rest-escuro.webp" target="_blank" rel="noopener"><img src="img/api-rest-escuro-mini.webp" width="320" height="200" loading="lazy" alt="A mesma tela no modo escuro"></a></li>
+              </ul>
+              <figcaption>Telas do projeto (dados fictícios). Clique para ampliar.</figcaption>
+            </figure>
             <details>
-              <summary>O que pratiquei</summary>
-              <ul class="contrib"><li>Endpoints GET, POST, PUT e DELETE em /api/usuarios</li><li>Camadas Controller, Service e Repository com JpaRepository</li><li>Respostas HTTP com ResponseEntity (201 Created, 404 Not Found)</li><li>Conexão com o banco configurada por variável de ambiente</li></ul>
+              <summary>O que eu fiz</summary>
+              <ul class="contrib"><li>Endpoints GET, POST, PUT e DELETE em camadas Controller, Service e Repository</li><li>DTO com Bean Validation e tratamento global de erros em JSON com @RestControllerAdvice</li><li>Importação de usuários por arquivo TXT/CSV em uma única transação</li><li>Testes com JUnit, Mockito e MockMvc usando banco H2 em memória</li><li>Documentação com Swagger e front em JavaScript com busca, ordenação e modo escuro</li></ul>
             </details>
             <div class="links"><a href="https://github.com/deysemedeiros/Projeto-API-Rest-SpringBoot" target="_blank" rel="noopener">Código</a></div>
           </div>
