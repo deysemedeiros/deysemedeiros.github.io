@@ -55,3 +55,40 @@ document.querySelectorAll(".copiar").forEach((botao) => {
 // 3. Ano atual no rodapé
 const ano = document.getElementById("ano");
 if (ano) ano.textContent = new Date().getFullYear();
+
+// 4. Filtro de projetos
+const filtros = document.querySelectorAll(".filtro");
+const cards = document.querySelectorAll(".card");
+filtros.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    const alvo = botao.dataset.filtro;
+    filtros.forEach((b) => {
+      const ativo = b === botao;
+      b.classList.toggle("ativo", ativo);
+      b.setAttribute("aria-pressed", String(ativo));
+    });
+    cards.forEach((card) => {
+      const cats = card.dataset.cat.split(" ");
+      card.hidden = !(alvo === "todos" || cats.includes(alvo));
+    });
+  });
+});
+
+// 5. Abas da seção Carreira (com navegação por setas)
+const abas = Array.from(document.querySelectorAll('.abas [role="tab"]'));
+function ativarAba(aba) {
+  abas.forEach((a) => {
+    const sel = a === aba;
+    a.setAttribute("aria-selected", String(sel));
+    a.tabIndex = sel ? 0 : -1;
+    document.getElementById(a.getAttribute("aria-controls")).hidden = !sel;
+  });
+  aba.focus();
+}
+abas.forEach((aba, i) => {
+  aba.addEventListener("click", () => ativarAba(aba));
+  aba.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") ativarAba(abas[(i + 1) % abas.length]);
+    if (e.key === "ArrowLeft") ativarAba(abas[(i - 1 + abas.length) % abas.length]);
+  });
+});
